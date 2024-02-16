@@ -1,0 +1,33 @@
+pip install selenium
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
+import time
+
+def check_tickets_available(url):
+    # Path to your WebDriver
+    # Ensure you have downloaded the correct WebDriver for your browser version
+    # and have placed it in your PATH
+    driver_path = 'path/to/your/webdriver'
+    browser = webdriver.Chrome(driver_path)
+
+    browser.get(url)
+
+    try:
+        # Adjust the selector based on the website's structure for ticket availability
+        tickets_available = browser.find_element(By.CSS_SELECTOR, 'selector-for-tickets').text
+        if "Tickets Available" in tickets_available:
+            print("Tickets are available!")
+        else:
+            print("Tickets are not available yet.")
+    except NoSuchElementException:
+        print("No ticket information found.")
+
+    browser.quit()
+
+if __name__ == '__main__':
+    # The URL where tickets will be sold
+    url = 'https://www.example.com/ironmaiden-tickets'
+    check_tickets_available(url)
