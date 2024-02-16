@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargate SG-1 Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Stargate SG-1 Fan Page!</h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#latest-news">Latest News</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="introduction">
+        <h2>Introduction to Stargate SG-1</h2>
+        <p>Stargate SG-1 is a science-fiction TV series that explores the adventures of the SG-1 team as they travel across the galaxy through the Stargate, a device that creates wormholes to other worlds. Join us in celebrating the legacy of this iconic series.</p>
+    </section>
+    <section id="latest-news">
+        <h2>Latest News</h2>
+        <p>Stay tuned for the latest updates and fan events related to Stargate SG-1.</p>
+    </section>
+    <footer>
+        <p>Contact us at <a href="mailto:fanpage@example.com">fanpage@example.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, section, footer {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav#menu ul {
+    background: #555;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#menu ul li {
+    display: inline;
+}
+
+nav#menu ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav#menu ul li a:hover {
+    background-color: #777;
+}
+
+section {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // This is where you can add JavaScript to manipulate the page or respond to events.
+    console.log("Stargate SG-1 Fan Page Ready!");
+});
